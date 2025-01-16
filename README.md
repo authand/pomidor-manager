@@ -19,14 +19,14 @@
 
 - **Python versija**: Python 3.x  
 - **Operētājsistēma**: Windows, macOS vai Linux  
-- **Papildu bibliotēkas**: norādītas failā `requirements.txt`.
+- **Papildu bibliotēkas**: `sqlite3`,`cryptography`, `hashlib`, `pyperclip`, `getpass`, `secrets`.
 
 ---
 
 ## Instalēšanas instrukcija
 
 1. **Lejupielādējiet projekta failus** no repozitorija.
-2. **Instalējiet nepieciešamās bibliotēkas**, izpildot komandu:
+2. **Instalējiet nepieciešamās bibliotēkas**, izpildot terminālā komandu:
    ```bash
    pip install -r requirements.txt
    ```
