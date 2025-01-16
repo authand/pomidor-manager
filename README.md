@@ -80,5 +80,5 @@
 
 ## Autors
 
-👤 **Izstrādātājs**: Jūsu Vārds  
-📧 **Kontakti**: [lietotajs@epasts.lv](mailto:lietotajs@epasts.lv)
+👤 **Izstrādātājs**: evanora  
+📧 **Kontakti**: [sokarihinji@gmail.com](mailto:sokarihinji@gmail.com)
