@@ -1,2 +1,2 @@
 # Password Manager
-Simple to use Password Manager with encryption.
+Simple to use Password Manager.
