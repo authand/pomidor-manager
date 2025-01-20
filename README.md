@@ -4,7 +4,6 @@
 **Paroļu pārvaldnieka programma** ir drošs un lietotājam draudzīgs rīks ar grafisku saskarni paroļu ģenerēšanai, glabāšanai un pārvaldībai. Tā izmanto modernus šifrēšanas algoritmus, lai nodrošinātu datu aizsardzību. Piemērota gan ikdienas lietotājiem, gan profesionālām vajadzībām.
 
 **(Nav 100% drošs neizmantot sensitīviem datiem, tikai izglītībai).**
-test
 ---
 
 ## Funkcionalitāte
