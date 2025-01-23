@@ -35,12 +35,13 @@
 ## Instalēšanas instrukcija
 
 1. **Lejupielādējiet projekta failus** no repozitorija
-2. **Instalējiet nepieciešamās bibliotēkas**, izpildot terminālā komandu:
+2. **Atvērt terminālu pareizajā direktorijā**, right clickot un Open In Terminal
+3. **Instalējiet nepieciešamās bibliotēkas**, izpildot terminālā komandu:
 ```bash
 pip install -r requirements.txt
 ```
-3. **Pārliecinieties**, ka jūsu sistēmā ir instalēts Python 3
-4. **Palaidiet programmu**, izmantojot komandu:
+4. **Pārliecinieties**, ka jūsu sistēmā ir instalēts Python 3
+5. **Palaidiet programmu**, izmantojot komandu:
 ```bash
 python password_manager_gui.py
 ```

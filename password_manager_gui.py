@@ -157,7 +157,7 @@ class PasswordManagerGUI:
         dialog.transient(self.root)
         dialog.grab_set()
 
-        ttk.Label(dialog, text="Ievadiet Galveno Paroli:").pack(pady=10)
+        ttk.Label(dialog, text="Ievadiet galveno paroli:").pack(pady=10)
         password_entry = ttk.Entry(dialog, show="*")
         password_entry.pack(pady=5)
 
