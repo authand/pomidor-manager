@@ -18,7 +18,7 @@ class PasswordManagerGUI:
     # Inicializēt mainīgos un funkcijas
     def __init__(self, root):
         self.root = root
-        self.root.title("Paroļu Pārvaldnieks")
+        self.root.title("Paroļu pārvaldnieks")
         self.root.geometry("500x400")
         self.pm = PasswordManager()
         self.create_widgets()
@@ -35,10 +35,10 @@ class PasswordManagerGUI:
         self.generate_password_frame = ttk.Frame(self.notebook)
         self.list_services_frame = ttk.Frame(self.notebook)
 
-        self.notebook.add(self.add_password_frame, text='Pievienot Paroli')
-        self.notebook.add(self.get_password_frame, text='Iegūt Paroli')
-        self.notebook.add(self.generate_password_frame, text='Ģenerēt Paroli')
-        self.notebook.add(self.list_services_frame, text='Pakalpojumu Saraksts')
+        self.notebook.add(self.add_password_frame, text='Pievienot paroli')
+        self.notebook.add(self.get_password_frame, text='Iegūt paroli')
+        self.notebook.add(self.generate_password_frame, text='Ģenerēt drošu paroli')
+        self.notebook.add(self.list_services_frame, text='Pakalpojumu saraksts')
 
         # Pievienot paroles tabu
         ttk.Label(self.add_password_frame, text="Pakalpojums:").grid(row=0, column=0, padx=5, pady=5)
@@ -54,11 +54,11 @@ class PasswordManagerGUI:
         self.add_password_entry.grid(row=2, column=1, padx=5, pady=5)
 
         self.use_generated_var = tk.BooleanVar()
-        ttk.Checkbutton(self.add_password_frame, text="Izmantot Ģenerētu Paroli", 
+        ttk.Checkbutton(self.add_password_frame, text="Izmantot drošu paroli", 
                        variable=self.use_generated_var, 
                        command=self.toggle_password_entry).grid(row=3, column=0, columnspan=2, pady=5)
 
-        ttk.Button(self.add_password_frame, text="Pievienot Paroli", 
+        ttk.Button(self.add_password_frame, text="Pievienot paroli", 
                   command=self.add_password).grid(row=4, column=0, columnspan=2, pady=10)
 
         # Iegūt paroles tabu
@@ -79,7 +79,7 @@ class PasswordManagerGUI:
         self.length_entry.insert(0, "16")
         self.length_entry.grid(row=0, column=1, padx=5, pady=5)
 
-        ttk.Button(self.generate_password_frame, text="Ģenerēt Paroli", 
+        ttk.Button(self.generate_password_frame, text="Ģenerēt paroli", 
                   command=self.generate_password).grid(row=1, column=0, columnspan=2, pady=10)
 
         self.generated_password_var = tk.StringVar()
@@ -93,7 +93,7 @@ class PasswordManagerGUI:
         self.services_tree.heading('Lietotājvārds', text='Lietotājvārds')
         self.services_tree.pack(expand=True, fill='both', padx=5, pady=5)
 
-        ttk.Button(self.list_services_frame, text="Atjaunot Sarakstu", 
+        ttk.Button(self.list_services_frame, text="Atjaunot sarakstu", 
                   command=self.update_services_list).pack(pady=5)
 
     def check_master_password(self):
@@ -111,17 +111,17 @@ class PasswordManagerGUI:
     def initialize_master_password_dialog(self):
         # izveido dialogu master paroles ievadisanai
         dialog = tk.Toplevel(self.root)
-        dialog.title("Inicializēt Galveno Paroli")
+        dialog.title("Inicializēt galveno paroli")
         dialog.geometry("300x200")
         dialog.transient(self.root)
         dialog.grab_set()
 
         # paroles ievades lauki
-        ttk.Label(dialog, text="Izveidot Galveno Paroli:").pack(pady=10)
+        ttk.Label(dialog, text="Izveidot galveno paroli:").pack(pady=10)
         password_entry = ttk.Entry(dialog, show="*")
         password_entry.pack(pady=5)
 
-        ttk.Label(dialog, text="Apstiprināt Galveno Paroli:").pack(pady=10)
+        ttk.Label(dialog, text="Apstiprināt galveno paroli:").pack(pady=10)
         confirm_entry = ttk.Entry(dialog, show="*")
         confirm_entry.pack(pady=5)
 
@@ -186,7 +186,7 @@ class PasswordManagerGUI:
         
         if self.use_generated_var.get():
             password = self.pm.generate_password(16)
-            messagebox.showinfo("Veiksmīgi", f"Ģenerētā parole: {password}\nParole nokopēta starpliktuvē!")
+            messagebox.showinfo("Veiksmīgi", f"Ģenerētā droša parole: {password}\nParole nokopēta starpliktuvē!")
         else:
             password = self.add_password_entry.get()
 
