@@ -1,28 +1,29 @@
-# Paroļu Pārvaldnieka Programma
+# Password Manager Program
 
-## Projekta apraksts
-**Paroļu pārvaldnieka programma** ir drošs un lietotājam draudzīgs rīks ar grafisku saskarni paroļu ģenerēšanai, glabāšanai un pārvaldībai. Tā izmanto modernus šifrēšanas algoritmus, lai nodrošinātu datu aizsardzību. Piemērota gan ikdienas lietotājiem, gan profesionālām vajadzībām.
+## Project Description
+The **Password Manager Program** is a secure and user-friendly tool with a graphical interface for generating, storing, and managing passwords. It uses modern encryption algorithms to ensure data protection. Suitable for both everyday users and professional needs.
 
-**(Nav 100% drošs neizmantot sensitīviem datiem, tikai izglītībai).**
----
-
-## Funkcionalitāte
-
-- 🖥️ **Grafiskā lietotāja saskarne**: Vienkārša un intuitīva lietošana
-- 🔒 **Master paroles aizsardzība**: Droša piekļuve, izmantojot galveno paroli
-- 🔑 **Drošu paroļu ģenerēšana**: Veidojiet unikālas, drošas paroles ar izvēlētu garumu
-- 📂 **Paroļu glabāšana**: Saglabājiet savas paroles šifrētā datubāzē
-- 🔓 **Paroļu atgūšana**: Atgūstiet un nokopējiet paroles starpliktuvē
-- 📋 **Glabāto datu pārskats**: Skatiet visus pakalpojumus un lietotājvārdus
-- 📱 **Ērta navigācija**: Pārslēdzieties starp dažādām funkcijām, izmantojot cilnes
+**(Not 100% secure, do not use for sensitive data, for educational purposes only).**
 
 ---
 
-## Sistēmas prasības
+## Features
 
-- **Python versija**: Python 3.x
-- **Operētājsistēma**: Windows, macOS vai Linux
-- **Papildu bibliotēkas**: 
+- **Graphical User Interface**: Simple and intuitive usage
+- **Master Password Protection**: Secure access using a master password
+- **Secure Password Generation**: Create unique, strong passwords with a chosen length
+- **Password Storage**: Save passwords in an encrypted database
+- **Password Retrieval**: Retrieve and copy passwords to the clipboard
+- **Stored Data Overview**: View all services and usernames
+- **Easy Navigation**: Switch between different functions using tabs
+
+---
+
+## System Requirements
+
+- **Python Version**: Python 3.x
+- **Operating System**: Windows, macOS, or Linux
+- **Additional Libraries**:
   - sqlite3
   - cryptography
   - hashlib
@@ -32,68 +33,68 @@
 
 ---
 
-## Instalēšanas instrukcija
+## Installation Instructions
 
-1. **Lejupielādējiet projekta failus** no repozitorija
-2. **Atvērt terminālu pareizajā direktorijā**, right clickot un Open In Terminal
-3. **Instalējiet nepieciešamās bibliotēkas**, izpildot terminālā komandu:
+1. **Download the project files** from the repository
+2. **Open the terminal in the correct directory** by right-clicking and selecting "Open In Terminal"
+3. **Install the required libraries** by running the following command in the terminal:
 ```bash
 pip install -r requirements.txt
 ```
-4. **Pārliecinieties**, ka jūsu sistēmā ir instalēts Python 3
-5. **Palaidiet programmu**, izmantojot komandu:
+4. **Ensure** that Python 3 is installed on your system
+5. **Run the program** using the command:
 ```bash
 python password_manager_gui.py
 ```
 
 ---
 
-## Lietošanas instrukcija
+## User Guide
 
-### Pirmā palaišana
-1. **Inicializējiet master paroli**
-   - Pirmajā palaišanas reizē ievadiet un apstipriniet galveno paroli
-   - Šī parole būs nepieciešama katru reizi, atverot programmu
+### First Launch
+1. **Initialize the Master Password**
+   - Enter and confirm the master password during the first launch
+   - This password will be required each time the program is opened
 
-### Galvenā saskarne
-Programma piedāvā četras galvenās cilnes:
+### Main Interface
+The program offers four main tabs:
 
-1. **Pievienot Paroli**
-   - Ievadiet pakalpojuma nosaukumu
-   - Ievadiet lietotājvārdu
-   - Izvēlieties starp manuālu paroles ievadi vai automātisku ģenerēšanu
+1. **Add Password**
+   - Enter the service name
+   - Enter the username
+   - Choose between manual password entry or automatic generation
 
-2. **Iegūt Paroli**
-   - Ievadiet pakalpojuma nosaukumu un lietotājvārdu
-   - Parole tiks parādīta un automātiski nokopēta starpliktuvē
+2. **Retrieve Password**
+   - Enter the service name and username
+   - The password will be displayed and automatically copied to the clipboard
 
-3. **Ģenerēt Paroli**
-   - Norādiet vēlamo paroles garumu
-   - Ģenerētā parole tiks parādīta un nokopēta starpliktuvē
+3. **Generate Password**
+   - Specify the desired password length
+   - The generated password will be displayed and copied to the clipboard
 
-4. **Pakalpojumu Saraksts**
-   - Pārskatāms saraksts ar visiem saglabātajiem pakalpojumiem
-   - Redzami pakalpojumu nosaukumi un lietotājvārdi
-   - Iespēja atjaunināt sarakstu
-
----
-
-## Drošības funkcijas
-
-- 🔐 **Šifrēta datubāze**: Visas paroles tiek glabātas šifrētā veidā
-- 🔑 **Droša master parole**: Izmanto PBKDF2 un SHA-256 hash funkcijas
-- 🎲 **Drošs paroļu ģenerators**: Izmanto Python secrets moduli
-- 📋 **Automātiska kopēšana**: Paroles tiek automātiski kopētas starpliktuvē
+4. **Service List**
+   - A comprehensive list of all stored services
+   - Displays service names and usernames
+   - Option to update the list
 
 ---
 
-## Licences informācija
+## Security Features
 
-Šis projekts ir izplatīts saskaņā ar **MIT licenci**. Plašāku informāciju skatiet failā LICENSE.
+- **Encrypted Database**: All passwords are stored in an encrypted format
+- **Secure Master Password**: Uses PBKDF2 and SHA-256 hashing functions
+- **Secure Password Generator**: Uses Python's secrets module
+- **Automatic Copying**: Passwords are automatically copied to the clipboard
 
 ---
 
-## Autors
+## License Information
 
-👤 **Izstrādātājs**: evanora  
-📧 **Kontakti**: [sokarihinji@gmail.com](mailto:sokarihinji@gmail.com)
+This project is distributed under the **MIT License**. For more details, see the LICENSE file.
+
+---
+
+## Author
+
+**Developer**: evanora  
+**Contact**: [sokarihinji@gmail.com](mailto:sokarihinji@gmail.com)
