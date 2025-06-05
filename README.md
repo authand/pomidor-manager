@@ -1,7 +1,7 @@
-# Password Manager Program
+# Pomidor Manager
 
 ## Project Description
-The **Password Manager Program** is a secure and user-friendly tool with a graphical interface for generating, storing, and managing passwords. It uses modern encryption algorithms to ensure data protection. Suitable for both everyday users and professional needs.
+The **Password Manager Program** is a tool with a graphical interface for generating, storing, and managing passwords.
 
 **(Not 100% secure, do not use for sensitive data, for educational purposes only).**
 
