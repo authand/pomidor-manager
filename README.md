@@ -22,8 +22,8 @@ A simple password manager with a GUI, built for a school project.
 
 ## Installation
 ```bash
-git clone <repo-url>
-cd <repo-folder>
+git clone https://github.com/authand/pomidor-manager
+cd pomidor-manager
 pip install -r requirements.txt
 python password_manager_gui.py
 ```
@@ -33,5 +33,3 @@ python password_manager_gui.py
 ## Usage
 - First run: set a master password  
 - Tabs: **Add**, **Retrieve**, **Generate**, **List**  
-
----
